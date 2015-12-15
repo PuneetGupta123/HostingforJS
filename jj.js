@@ -2,6 +2,8 @@
 var express = require('express');
 var app = express();
 
+app.set('port', (process.env.PORT || 5000));
+
 app.get('/', function(req, res) {
   console.log(req);
   res.send('It works!');
@@ -30,10 +32,7 @@ app.post('/instagram', function(req, res) {
   // Process the Instagram updates here
 });
 
-var server = app.listen(3000, function () {
-  var host = server.address().address;
-  var port = server.address().port;
-
+var server = app.listen(app.get('port'), function () {
   console.log('Example app listening at http://%s:%s', host, port);
 });
 
