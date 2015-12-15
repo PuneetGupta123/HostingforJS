@@ -1,0 +1,21 @@
+{
+  "name": "NodeJsapp",
+  "version": "0.0.0",
+  "description": "For Facebbok webhooks",
+  "main": "jj.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Webhooks",
+    "heroku"
+  ],
+  "author": "Puneet Gupta",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "engines": {
+    "node": "0.10.29"
+  },
+}
